@@ -3,6 +3,7 @@
 /* CSS to remove underline for all links */
  a:link, a:visited, a:hover, a.active {
    text-decoration: none;
+   color: black;
  }
 
 /* CSS for body */
