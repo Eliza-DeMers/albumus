@@ -1,0 +1,25 @@
+<!DOCTYPE>
+ <html>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+<head>
+  <title>getJson example</title>
+  <script src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script type="text/javascript" language="javascript">
+   $(document).ready(function() {
+      $("button").click(function(event){
+          $.getJSON("country.json", function(country) {
+             $("#getJsonDiv").html('<p> Name: ' + country.countryName + '</p>');
+             $("#getJsonDiv").append('<p>Population : ' + country.population+ '</p>');
+          });
+      });
+   });
+</script>
+</head>
+<body>
+  <div id="getJsonDiv">
+ jQuery ajax getJSON example
+  </div>
+  <button>Get country data</button>
+</body>
+</html>
